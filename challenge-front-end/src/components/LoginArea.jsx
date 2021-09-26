@@ -14,6 +14,7 @@ export default class LoginArea extends React.Component {
       emailArea: '',
       passwordArea: '',
     }
+ challenge-front-end
   }
 
   handleEmailChange(event) {
