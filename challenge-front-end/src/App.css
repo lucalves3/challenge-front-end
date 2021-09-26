@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+.input-login-email {
+  font-size: 1.5em;
+  position: absolute;
+  width: 547px;
+  height: 54px;
+  left: 138px;
+  top: 344px;
+  /* Grey Scale / Grey-300 */
+  border: 1px solid #7D7E80;
+  box-sizing: border-box;
+  border-radius: 8px;
+  }
+  .input-login-password {
+  font-size: 1.5em;
+  position: absolute;
+  width: 547px;
+  height: 54px;
+  left: 138px;
+  top: 413px;
+  /* Grey Scale / Grey-300 */
+  border: 1px solid #7D7E80;
+  box-sizing: border-box;
+  border-radius: 8px;
+  }
+  .button-login {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 547px;
+  height: 54px;
+  left: 138px;
+  top: 500px;
+  /* Primary / Yelllow */
+  background: #FFCB05;
+  border-radius: 8px;
+  }
+  .text-button {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 24px;
+  left: 164px;
+  top: 515px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  /* Grey Scale / Grey-500 */
+  color: #1E1E1F;
+  }
+  .h1-login-area {
+    position: absolute;
+    width: 365px;
+    height: 108px;
+    left: 138px;
+    top: 188px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4em;
+    line-height: 54px;
+    
+    /* Grey Scale / Grey-500 */
+    
+    color: #1E1E1F;
+  }
+  .image-logo-pokemon {
+  position: absolute;
+  width: 206px;
+  height: 76px;
+  left: 138px;
+  top: 33px;
+  }
+  .screen-pokemons {
+  z-index: -3;
+  position: absolute;
+  width: 1635px;
+  height: 1054px;
+  left: 400px;
+  top: 0px;
+  }
+  .button-change-theme {
+  position: absolute;
+  width: 208px;
+  height: 38px;
+  left: 138px;
+  top: 950px;
+  /* Grey Scale / Grey-400 */
+  border: 1px solid #4B4B4D;
+  box-sizing: border-box;
+  border-radius: 22px;
+  background-color: white;
+  }
+  .theme-text {
+  margin-left: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  color: #4B4B4D;
+  }
+  .vector-theme-moon {
+    width: 15px;
+  }
