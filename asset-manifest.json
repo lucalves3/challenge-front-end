@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/challenge-front-end/static/css/main.1d9ffca3.chunk.css",
-    "main.js": "/challenge-front-end/static/js/main.32ad2128.chunk.js",
-    "main.js.map": "/challenge-front-end/static/js/main.32ad2128.chunk.js.map",
+    "main.css": "/challenge-front-end/static/css/main.47ccf1e3.chunk.css",
+    "main.js": "/challenge-front-end/static/js/main.a00d7397.chunk.js",
+    "main.js.map": "/challenge-front-end/static/js/main.a00d7397.chunk.js.map",
     "runtime-main.js": "/challenge-front-end/static/js/runtime-main.886ea27f.js",
     "runtime-main.js.map": "/challenge-front-end/static/js/runtime-main.886ea27f.js.map",
     "static/js/2.ec6c401b.chunk.js": "/challenge-front-end/static/js/2.ec6c401b.chunk.js",
@@ -10,15 +10,15 @@
     "static/js/3.3ff9cff3.chunk.js": "/challenge-front-end/static/js/3.3ff9cff3.chunk.js",
     "static/js/3.3ff9cff3.chunk.js.map": "/challenge-front-end/static/js/3.3ff9cff3.chunk.js.map",
     "index.html": "/challenge-front-end/index.html",
-    "static/css/main.1d9ffca3.chunk.css.map": "/challenge-front-end/static/css/main.1d9ffca3.chunk.css.map",
+    "static/css/main.47ccf1e3.chunk.css.map": "/challenge-front-end/static/css/main.47ccf1e3.chunk.css.map",
     "static/js/2.ec6c401b.chunk.js.LICENSE.txt": "/challenge-front-end/static/js/2.ec6c401b.chunk.js.LICENSE.txt",
-    "static/media/image-pokemon-color.9db02249.png": "/challenge-front-end/static/media/image-pokemon-color.9db02249.png",
-    "static/media/login-screen-pokemons.eaeea135.png": "/challenge-front-end/static/media/login-screen-pokemons.eaeea135.png"
+    "static/media/light-pokemons.eaeea135.png": "/challenge-front-end/static/media/light-pokemons.eaeea135.png",
+    "static/media/logopokemons-color.9db02249.png": "/challenge-front-end/static/media/logopokemons-color.9db02249.png"
   },
   "entrypoints": [
     "static/js/runtime-main.886ea27f.js",
     "static/js/2.ec6c401b.chunk.js",
-    "static/css/main.1d9ffca3.chunk.css",
-    "static/js/main.32ad2128.chunk.js"
+    "static/css/main.47ccf1e3.chunk.css",
+    "static/js/main.a00d7397.chunk.js"
   ]
 }
