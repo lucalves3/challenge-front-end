@@ -58,7 +58,7 @@ export default class LoginArea extends React.Component {
           placeholder="Digite sua Senha..."
           onChange={ this.handlePasswordChange }
           />
-          <Link to="/pokemon-area">
+          <Link to="/vertodos">
             <button
             className="button-login" 
             type="submit"
