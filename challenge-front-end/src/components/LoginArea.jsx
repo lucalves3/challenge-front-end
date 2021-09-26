@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import vector from '../images/Vector.png'
 
 export default class LoginArea extends React.Component {
   constructor() {
@@ -40,33 +41,44 @@ export default class LoginArea extends React.Component {
 
   render() {
     return(
-      <form>
-        <h1 className="h1-login-area">Comece a coletar pokémons!</h1>
-        <input
-        className="input-login-email"
-        type="text"
-        required="required"
-        placeholder="Digite seu Email..."
-        onChange={ this.handleEmailChange }
-        />
-        <input
-        className="input-login-password"
-        type="password"
-        placeholder="Digite sua senha..."
-        onChange={ this.handlePasswordChange }
-        />
-        <Link to="/pokemon-area">
-          <button
-          className="button-login" 
-          type="submit"
-          onClick={ this.handleButtonClick }
-          >
-            <p className="text-button">
-              Entrar
-            </p>
-          </button>
-        </Link>
-      </form>
+      <section>
+        <form>
+          <h1 className="h1-login-area">Comece a coletar pokémons!</h1>
+          <input
+          className="input-login-email"
+          type="text"
+          required="required"
+          placeholder="Digite seu Email..."
+          onChange={ this.handleEmailChange }
+          />
+          <input
+          className="input-login-password"
+          type="password"
+          placeholder="Digite sua Senha..."
+          onChange={ this.handlePasswordChange }
+          />
+          <Link to="/pokemon-area">
+            <button
+            className="button-login" 
+            type="submit"
+            onClick={ this.handleButtonClick }
+            >
+              <p className="text-button">
+                Entrar
+              </p>
+            </button>
+          </Link>
+        </form>
+        <button className="button-change-theme">
+          <img
+          className="vector-theme-moon"
+          src={ vector }
+          alt="mudar de tema" />
+          <strong className="theme-text">
+            Tema escuro
+          </strong>
+        </button>
+      </section>
     )
   }
 }

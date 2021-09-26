@@ -1,4 +1,5 @@
 .input-login-email {
+font-size: 1.5em;
 position: absolute;
 width: 547px;
 height: 54px;
@@ -13,6 +14,7 @@ border-radius: 8px;
 }
 
 .input-login-password {
+font-size: 1.5em;
 position: absolute;
 width: 547px;
 height: 54px;
@@ -73,7 +75,7 @@ color: #1E1E1F;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.4em;
   line-height: 54px;
   
   /* Grey Scale / Grey-500 */
@@ -96,4 +98,32 @@ width: 1920px;
 height: 1080px;
 left: 400px;
 top: 0px;
+}
+
+.button-change-theme {
+position: absolute;
+width: 208px;
+height: 38px;
+left: 138px;
+top: 950px;
+
+/* Grey Scale / Grey-400 */
+
+border: 1px solid #4B4B4D;
+box-sizing: border-box;
+border-radius: 22px;
+background-color: white;
+}
+
+.theme-text {
+margin-left: 10px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+color: #4B4B4D;
+}
+
+.vector-theme-moon {
+  width: 15px;
 }
