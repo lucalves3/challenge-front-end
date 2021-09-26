@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.input-login-email {
+position: absolute;
+width: 547px;
+height: 54px;
+left: 138px;
+top: 344px;
+
+/* Grey Scale / Grey-300 */
+
+border: 1px solid #7D7E80;
+box-sizing: border-box;
+border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-login-password {
+position: absolute;
+width: 547px;
+height: 54px;
+left: 138px;
+top: 413px;
+
+/* Grey Scale / Grey-300 */
+
+border: 1px solid #7D7E80;
+box-sizing: border-box;
+border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-login {
+display: flex;
+justify-content: center;
+position: absolute;
+width: 547px;
+height: 54px;
+left: 138px;
+top: 500px;
+
+/* Primary / Yelllow */
+
+background: #FFCB05;
+border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-button {
+display: flex;
+justify-content: center;
+width: 100px;
+height: 24px;
+left: 164px;
+top: 515px;
+
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-align: center;
+
+/* Grey Scale / Grey-500 */
+
+color: #1E1E1F;
 }
 
-.App-link {
-  color: #61dafb;
+.h1-login-area {
+  position: absolute;
+  width: 365px;
+  height: 108px;
+  left: 138px;
+  top: 188px;
+  
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  
+  /* Grey Scale / Grey-500 */
+  
+  color: #1E1E1F;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-logo-pokemon {
+position: absolute;
+width: 206px;
+height: 76px;
+left: 138px;
+top: 33px;
+}
+
+.screen-pokemons {
+z-index: -3;
+position: absolute;
+width: 1920px;
+height: 1080px;
+left: 400px;
+top: 0px;
 }
