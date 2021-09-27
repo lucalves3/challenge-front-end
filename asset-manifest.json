@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/challenge-front-end/static/css/main.0644f9d6.chunk.css",
-    "main.js": "/challenge-front-end/static/js/main.dbbfdc3c.chunk.js",
-    "main.js.map": "/challenge-front-end/static/js/main.dbbfdc3c.chunk.js.map",
-    "runtime-main.js": "/challenge-front-end/static/js/runtime-main.886ea27f.js",
-    "runtime-main.js.map": "/challenge-front-end/static/js/runtime-main.886ea27f.js.map",
-    "static/js/2.2ac86020.chunk.js": "/challenge-front-end/static/js/2.2ac86020.chunk.js",
-    "static/js/2.2ac86020.chunk.js.map": "/challenge-front-end/static/js/2.2ac86020.chunk.js.map",
-    "static/js/3.3ff9cff3.chunk.js": "/challenge-front-end/static/js/3.3ff9cff3.chunk.js",
-    "static/js/3.3ff9cff3.chunk.js.map": "/challenge-front-end/static/js/3.3ff9cff3.chunk.js.map",
+    "main.css": "/challenge-front-end/static/css/main.9879307c.chunk.css",
+    "main.js": "/challenge-front-end/static/js/main.3bcfaec9.chunk.js",
+    "main.js.map": "/challenge-front-end/static/js/main.3bcfaec9.chunk.js.map",
+    "runtime-main.js": "/challenge-front-end/static/js/runtime-main.f4ab74c5.js",
+    "runtime-main.js.map": "/challenge-front-end/static/js/runtime-main.f4ab74c5.js.map",
+    "static/js/2.db5a2eb8.chunk.js": "/challenge-front-end/static/js/2.db5a2eb8.chunk.js",
+    "static/js/2.db5a2eb8.chunk.js.map": "/challenge-front-end/static/js/2.db5a2eb8.chunk.js.map",
+    "static/js/3.6fe4dcff.chunk.js": "/challenge-front-end/static/js/3.6fe4dcff.chunk.js",
+    "static/js/3.6fe4dcff.chunk.js.map": "/challenge-front-end/static/js/3.6fe4dcff.chunk.js.map",
     "index.html": "/challenge-front-end/index.html",
-    "static/css/main.0644f9d6.chunk.css.map": "/challenge-front-end/static/css/main.0644f9d6.chunk.css.map",
-    "static/js/2.2ac86020.chunk.js.LICENSE.txt": "/challenge-front-end/static/js/2.2ac86020.chunk.js.LICENSE.txt",
+    "static/css/main.9879307c.chunk.css.map": "/challenge-front-end/static/css/main.9879307c.chunk.css.map",
+    "static/js/2.db5a2eb8.chunk.js.LICENSE.txt": "/challenge-front-end/static/js/2.db5a2eb8.chunk.js.LICENSE.txt",
     "static/media/light-pokemons.eaeea135.png": "/challenge-front-end/static/media/light-pokemons.eaeea135.png",
     "static/media/logopokemons-color.9db02249.png": "/challenge-front-end/static/media/logopokemons-color.9db02249.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.886ea27f.js",
-    "static/js/2.2ac86020.chunk.js",
-    "static/css/main.0644f9d6.chunk.css",
-    "static/js/main.dbbfdc3c.chunk.js"
+    "static/js/runtime-main.f4ab74c5.js",
+    "static/js/2.db5a2eb8.chunk.js",
+    "static/css/main.9879307c.chunk.css",
+    "static/js/main.3bcfaec9.chunk.js"
   ]
 }
