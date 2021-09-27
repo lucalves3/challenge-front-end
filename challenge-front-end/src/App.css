@@ -236,3 +236,88 @@ background: #FFCB05;
 .leave-vector {
   width: 15px;
 }
+
+.section-cards-pokemon {
+display: flex;
+padding: 10px;
+flex-direction: column;
+align-items: center;
+width: 220px;
+height: 330px;
+background: white;
+box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+}
+
+.pokemon-image {
+  width: 120px;
+  margin-left: 15px;
+}
+
+.name-pokemon {
+display: flex;
+justify-content: flex-start;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #000000;
+}
+
+.section-mainPokes {
+  display: flex;
+  margin-top: 50px;
+  padding: 100px;
+  background-color: #E5E5E5;
+  height: 100vh;
+}
+
+.button-pokemons-details {
+  width: 147px;
+  margin-left: 15px;
+  height: 32px;
+  background: #FFCB05;
+  border-radius: 8px;
+  border: none;
+}
+
+.heart-pokemons {
+  margin-top: 10px;
+}
+
+.div-poke-heart {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.div-elet-fire {
+  display: flex;
+  width: 180px;
+  justify-content: space-around;
+}
+
+.tag-p-elet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 25px;
+  left: 147px;
+  top: 324px;
+  background: #FFCB05;
+  border-radius: 10px;
+}
+
+.tag-p-fire {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  width: 70px;
+  height: 25px;
+  left: 147px;
+  top: 324px;
+  background: #FF3326;
+  border-radius: 10px;
+}
