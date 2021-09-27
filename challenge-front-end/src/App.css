@@ -240,6 +240,7 @@ background: #FFCB05;
 .section-cards-pokemon {
 display: flex;
 padding: 10px;
+margin: 10px;
 flex-direction: column;
 align-items: center;
 width: 220px;
@@ -267,10 +268,11 @@ color: #000000;
 
 .section-mainPokes {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   margin-top: 50px;
-  padding: 100px;
   background-color: #E5E5E5;
-  height: 100vh;
 }
 
 .button-pokemons-details {
@@ -320,4 +322,10 @@ color: #000000;
   top: 324px;
   background: #FF3326;
   border-radius: 10px;
+}
+
+.section-cards-api-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
