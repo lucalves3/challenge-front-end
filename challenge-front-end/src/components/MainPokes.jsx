@@ -7,6 +7,7 @@ export default class MainPokes extends React.Component {
     
     this.getFunction = this.getFunction.bind(this);
     this.getAllPokes = this.getAllPokes.bind(this);
+    this.filterApiPoke = this.filterApiPoke.bind(this);
 
     this.state={
       pokeApi: [],
@@ -32,14 +33,23 @@ export default class MainPokes extends React.Component {
     const arrayNames = [];
     const arrayApi = [];
     const api = await getAllPokemons()
-    for (let index = 0; index < 900; index++) {
+    for (let index = 0; index < 100; index+= 1) {
       arrayNames.push(api.results.map((poke) => (poke.name))[index])
       const vamo = await getApiPokemon(`${arrayNames[index]}`)
       arrayApi.push(vamo)
-      console.log(vamo)
-      this.setState((prevState) => ({
+      this.setState({
         pokeApi: [arrayApi],
-      }))
+      })
+    }
+  }
+
+  filterApiPoke(event) {
+    const { pokeApi } = this.state
+    if (event.target.value === 'fire') {
+      const newArray = pokeApi.filter(() => pokeApi.map((pokemon) => pokemon).map((element) => element.map((element2) => element2.types.map((atributo) => atributo.type.name))) === 'grass')
+      this.setState({
+        pokeApi: newArray
+      })
     }
   }
 
@@ -52,6 +62,33 @@ export default class MainPokes extends React.Component {
     
     return (
       <main className="section-mainPokes">
+        <section>
+          <button 
+          className="button-vertodos"
+          value="Todos"
+          >
+            Todos
+          </button>
+          <button 
+          className="button-vertodos"
+          value="fire"
+          onClick={ this.filterApiPoke }
+          >
+            Fire
+          </button>
+          <button 
+          className="button-vertodos"
+          value="Eletric"
+          >
+            Eletric
+          </button>
+          <button 
+          className="button-vertodos"
+          value="Water"
+          >
+            Water
+          </button>
+        </section>
         {<section className="section-cards-api-pokemon">
           { pokeApi.map((element) => (element.map((pokemon) => (
             <section className="section-cards-pokemon" key={ pokemon.name } >
@@ -62,10 +99,10 @@ export default class MainPokes extends React.Component {
             {<img className="pokemon-image" src={ pokemon.sprites.front_default } alt={ pokemon.name } />}
             </div>
             <p className="name-pokemon"> { pokemon.name } </p>
-            <p> ID: 101</p>
+            <p> ID:{ pokemon.id }</p>
             <div className="div-elet-fire">
-              <p className="tag-p-elet">Elétrico</p>
-              <p className="tag-p-fire">Fire</p>
+              { pokemon.types.map((name) => (<p key={ name.url } className={`tag-p-${name.type.name}`}>{ name.type.name }</p>)) }
+              {/* <p className="tag-p-fire">Fire</p> */}
             </div>
             <button className="button-pokemons-details">Ver detalhes</button>
             </section>
