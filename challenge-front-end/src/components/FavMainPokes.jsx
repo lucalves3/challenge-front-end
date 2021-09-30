@@ -1,15 +1,13 @@
 import React from 'react';
 import { getAllPokemons, getApiPokemon } from '../services/Api';
-import FavMainPokes from './FavMainPokes';
 
-export default class MainPokes extends React.Component {
+export default class FavMainPokes extends React.Component {
   constructor() {
     super()
     
     this.getFunction = this.getFunction.bind(this);
     this.getAllPokes = this.getAllPokes.bind(this);
     this.filterApiPoke = this.filterApiPoke.bind(this);
-    this.onclickButtonFav = this.onclickButtonFav.bind(this);
 
     this.state={
       pokeApi: [],
@@ -53,16 +51,14 @@ export default class MainPokes extends React.Component {
     console.log(newArray)
   }
 
-  onclickButtonFav(event) {
-    {<FavMainPokes favorited= { event.target.value }/>}
-  }
-
   componentWillUnmount() {
     this.getFunction()
   }
 
   render() {
     const { pokeApi } = this.state;
+    const { favorited } = this.props;
+    console.log(favorited)
     
     return (
       <main className="section-mainPokes">
@@ -101,8 +97,8 @@ export default class MainPokes extends React.Component {
                   <input 
                   type="checkbox"
                   /* checked={true} */
-                  value={pokemon.id}
-                  onClick={this.onclickButtonFav}
+                  /* value={pokemon.id}
+                  onClick={this.onclickButtonFav} */
                   />
                 </label>
                 {<img className="pokemon-image" src={ pokemon.sprites.front_default } alt={ pokemon.name } />}

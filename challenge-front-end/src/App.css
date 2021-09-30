@@ -411,6 +411,32 @@ color: #000000;
   border-radius: 10px;
 }
 
+.tag-p-dark {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  width: 70px;
+  height: 25px;
+  left: 147px;
+  top: 324px;
+  background: black;
+  border-radius: 10px;
+}
+
+.tag-p-dragon {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  width: 70px;
+  height: 25px;
+  left: 147px;
+  top: 324px;
+  background: rgb(255, 145, 0);
+  border-radius: 10px;
+}
+
 .tag-p-grass {
   display: flex;
   align-items: center;
@@ -539,3 +565,12 @@ border-radius: 8px;
   border-radius: 8px;
   border: none;
   }
+
+  .heart-fav {
+    background-color: red;
+  }
+
+
+  /* button fav */
+
+  
