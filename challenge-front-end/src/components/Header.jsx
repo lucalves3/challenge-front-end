@@ -37,7 +37,7 @@ export default class Header extends React.Component {
         </section>
         <Link to="/challenge-front-end">
           <button className="button-leave-header">
-            <p>Sair</p>
+            <p className="tag-p-leave">Sair</p>
             <img
             className="leave-vector"
             src={ vector }
