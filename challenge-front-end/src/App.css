@@ -549,12 +549,12 @@ color: #000000;
 }
 
 .button-vertodos {
-width: 145px;
-height: 42px;
-margin: 10px 30px;
-border: 1px solid #6B6868;
-box-sizing: border-box;
-border-radius: 8px;
+  width: 145px;
+  height: 42px;
+  margin: 10px 30px;
+  border: 1px solid #6B6868;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .button-vertodos:hover {
@@ -564,11 +564,11 @@ border-radius: 8px;
   background: #FFCB05;
   border-radius: 8px;
   border: none;
-  }
+}
 
-  .heart-fav {
-    background-color: red;
-  }
+.heart-fav {
+  background-color: red;
+}
 
 
   /* button fav */
