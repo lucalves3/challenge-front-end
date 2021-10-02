@@ -24,18 +24,15 @@ export default class LoginArea extends React.Component {
 	}
 
 	checkLogin() {
-		const { getEmail, getPassword } = this.state;
 		this.setState({
 			getEmail: localStorage.getItem('UserEmail'),
 			getPassword: localStorage.getItem('UserPassword')
 		});
-		const getInputEmail = document.getElementsByClassName('input-login-email');
-		const getInputPassword = document.getElementsByClassName('input-login-password');
-		console.log(getInputEmail.value);
+		/* console.log(getInputEmail.value);
 		if(getEmail !== '' && getPassword !== '') {
 			getInputEmail.value = getEmail;
 			getInputPassword.value = getPassword;
-		} 
+		}  */
 	}
 
 	handleEmailChange(event) {
@@ -54,16 +51,26 @@ export default class LoginArea extends React.Component {
 	handleButtonClick() {
 		const email = this.state.emailArea;
 		const password = this.state.passwordArea;
-		localStorage.setItem(
-			'UserEmail', email,
-		);
-		localStorage.setItem(
-			'UserPassword', password,
-		);
+		if(email !== '' && password !== '') {
+			localStorage.setItem(
+				'UserEmail', email,
+			);
+			localStorage.setItem(
+				'UserPassword', password,
+			);
+			localStorage.setItem(
+				'Token', true,
+			);
+		}
+		if(email === '' && password === '') {
+			alert('Preencha os campos de Login e Password!');
+		}
 	}
 
 	render() {
-		const { getEmail, getPassword } = this.state;
+		const { getEmail, getPassword, emailArea, passwordArea } = this.state;
+		const sum = ( emailArea.length + passwordArea.length );
+    const number = 30;
 		return(
 			<section>
 				<form>
@@ -84,18 +91,30 @@ export default class LoginArea extends React.Component {
 						onChange={ this.handlePasswordChange }
 						value={ getPassword === '' ? this.handlePasswordChange : localStorage.getItem('UserPassword') }
 					/>
-					<Link to="/vertodos">
-						<button
-							className="button-login" 
-							type="submit"
-							required
-							onClick={ this.handleButtonClick }
-						>
-							<p className="text-button">
+					{ (sum < number) ? (<button
+						disabled
+						className="button-login" 
+						type="submit"
+						required
+						onClick={ this.handleButtonClick }
+					>
+						<p className="text-button">
                 Entrar
-							</p>
-						</button>
-					</Link>
+						</p>
+					</button>) :
+						<Link to="/vertodos">
+							<button
+								className="button-login" 
+								type="submit"
+								required
+								onClick={ this.handleButtonClick }
+							>
+								<p className="text-button">
+                Entrar
+								</p>
+							</button>
+						</Link>
+					}
 				</form>
 				<button className="button-change-theme">
 					<img

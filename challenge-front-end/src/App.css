@@ -63,6 +63,7 @@
   .button-login {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   width: 547px;
   height: 54px;
@@ -73,12 +74,10 @@
   border-radius: 8px;
   }
   .text-button {
+  margin: 0;
   display: flex;
   justify-content: center;
-  width: 100px;
-  height: 24px;
-  left: 164px;
-  top: 515px;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
