@@ -6,6 +6,7 @@ export default class Procurar extends React.Component {
     return (
       <section className="section-search">
         <Header />
+        
       </section>
     )
   }
