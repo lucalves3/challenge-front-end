@@ -570,6 +570,24 @@ color: #000000;
 }
 
 
-  /* button fav */
+/* Search page */
+.section-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
 
-  
+.search-page-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-search {
+  width: 765px;
+  height: 54px;
+  font-family: 'Poppins';
+  font-weight: 2em;
+}
