@@ -113,7 +113,9 @@ export default class MainPokes extends React.Component {
 								{ pokemon.types.map((name) => (<p key={ name.url } className={`tag-p-${name.type.name}`}>{ name.type.name }</p>)) }
 								{/* <p className="tag-p-fire">Fire</p> */}
 							</div>
+							<div className="div-button-details">
 							<button className="button-pokemons-details">Ver detalhes</button>
+              </div>
 						</section>
 					))))}
 				</section>}
