@@ -57,8 +57,7 @@ export default class FavMainPokes extends React.Component {
 
 	render() {
 		const { pokeApi } = this.state;
-		const { favorited } = this.props;
-		console.log(favorited);
+		/* const { favorited } = this.props; */
     
 		return (
 			<main className="section-mainPokes">
