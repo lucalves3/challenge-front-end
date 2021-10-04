@@ -12,7 +12,7 @@ function App() {
 	return (
 		<div>
 			<Switch>
-				<Route exact path="/challenge-front-end">
+				<Route exact path="/">
 					{(token === 'true') ? <Redirect to="/vertodos" /> :  <Login />}
 				</Route>
 				<Route path="/vertodos" >

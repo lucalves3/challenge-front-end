@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import { Input } from 'semantic-ui-react'
 import { searchApiPokemon } from '../services/Api';
 import LoaderExampleInlineCentered from '../components/Loading';
+import { Rating } from 'semantic-ui-react'
 
 export default class Procurar extends React.Component {
   constructor() {
@@ -43,6 +44,9 @@ export default class Procurar extends React.Component {
   }
 
   cardPokemons() {
+    const RatingExampleRating = () => (
+      <Rating icon='heart' defaultRating={0} size="massive" />
+    )
     const { returnApi } = this.state;
     return (<>
       <main className="main-search-pokemons">
@@ -50,9 +54,7 @@ export default class Procurar extends React.Component {
           <section className="section-cards-pokemon" key={ returnApi.name } >
 							<div className="div-poke-heart">
 								<label> 
-									<input 
-										type="checkbox"
-                    />
+                  {RatingExampleRating()}
 								</label>
 								{<img className="pokemon-image" src={ returnApi.sprites.front_default } alt={ returnApi.name } />}
 							</div>

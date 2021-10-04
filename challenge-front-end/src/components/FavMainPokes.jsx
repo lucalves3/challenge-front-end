@@ -1,5 +1,6 @@
 import React from 'react';
-import { getAllPokemons, getApiPokemon } from '../services/Api';
+import { getAllPokemons, getApiPokemon, searchApiPokemonById } from '../services/Api';
+import PropTypes from 'prop-types';
 
 export default class FavMainPokes extends React.Component {
 	constructor() {
@@ -32,7 +33,11 @@ export default class FavMainPokes extends React.Component {
 	async getFunction() {
 		const arrayNames = [];
 		const arrayApi = [];
-		const api = await getAllPokemons();
+		const api = await searchApiPokemonById();
+		const { favorited } = this.props;
+		this.setState({
+			pokeApi: favorited,
+		})
 		for (let index = 0; index < 20; index+= 1) {
 			arrayNames.push(api.results.map((poke) => (poke.name))[index]);
 			const vamo = await getApiPokemon(`${arrayNames[index]}`);
@@ -57,7 +62,6 @@ export default class FavMainPokes extends React.Component {
 
 	render() {
 		const { pokeApi } = this.state;
-		/* const { favorited } = this.props; */
     
 		return (
 			<main className="section-mainPokes">
@@ -118,3 +122,7 @@ export default class FavMainPokes extends React.Component {
 		);
 	}
 }
+
+FavMainPokes.propTypes = {
+  favorited: PropTypes.string.isRequired,
+};

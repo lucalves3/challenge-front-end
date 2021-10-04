@@ -181,9 +181,10 @@ color: #1E1E1F;
 
 .tag-p-leave {
   display: flex;
+  font-family: 'Poppins';
+  padding-top: 15px;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
   margin-left: 15px;
 }
 
@@ -607,3 +608,4 @@ color: #000000;
   display: flex;
   justify-content: center;
 }
+

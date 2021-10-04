@@ -16,3 +16,9 @@ export async function searchApiPokemon(nameSearch) {
   const apiToJsonSearch = await apiPokeSearch.json();
   return apiToJsonSearch;
 }
+
+export async function searchApiPokemonById(id) {
+  const apiToPokeId = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  const apiToJson = await apiToPokeId.json();
+  return apiToJson;
+}

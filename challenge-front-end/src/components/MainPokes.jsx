@@ -1,6 +1,7 @@
 import React from 'react';
 import { getAllPokemons, getApiPokemon } from '../services/Api';
 import FavMainPokes from './FavMainPokes';
+import { Rating } from 'semantic-ui-react'
 
 export default class MainPokes extends React.Component {
 	constructor() {
@@ -62,6 +63,9 @@ export default class MainPokes extends React.Component {
 	}
 
 	render() {
+		const RatingExampleRating = () => (
+			<Rating icon='heart' defaultRating={0} size="massive" />
+		)
 		const { pokeApi } = this.state;
     
 		return (
@@ -98,12 +102,7 @@ export default class MainPokes extends React.Component {
 						<section className="section-cards-pokemon" key={ pokemon.name } >
 							<div className="div-poke-heart">
 								<label> 
-									<input 
-										type="checkbox"
-										/* checked={true} */
-										value={pokemon.id}
-										onClick={this.onclickButtonFav}
-									/>
+									{RatingExampleRating()}
 								</label>
 								{<img className="pokemon-image" src={ pokemon.sprites.front_default } alt={ pokemon.name } />}
 							</div>
