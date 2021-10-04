@@ -1,6 +1,7 @@
 import React from 'react';
 import { getAllPokemons, getApiPokemon } from '../services/Api';
 import FavMainPokes from './FavMainPokes';
+import { Rating } from 'semantic-ui-react';
 
 export default class MainPokes extends React.Component {
 	constructor() {
@@ -44,6 +45,8 @@ export default class MainPokes extends React.Component {
 			});
 		}
 	}
+	
+
 
 	filterApiPoke() {
 		const { pokeApi } = this.state;
@@ -62,8 +65,10 @@ export default class MainPokes extends React.Component {
 	}
 
 	render() {
+		const RatingExampleRating = () => (
+			<Rating icon='heart' defaultRating={0} size="massive" />
+		)
 		const { pokeApi } = this.state;
-    
 		return (
 			<main className="section-mainPokes">
 				<section>
@@ -98,12 +103,7 @@ export default class MainPokes extends React.Component {
 						<section className="section-cards-pokemon" key={ pokemon.name } >
 							<div className="div-poke-heart">
 								<label> 
-									<input 
-										type="checkbox"
-										/* checked={true} */
-										value={pokemon.id}
-										onClick={this.onclickButtonFav}
-									/>
+									{RatingExampleRating()}
 								</label>
 								{<img className="pokemon-image" src={ pokemon.sprites.front_default } alt={ pokemon.name } />}
 							</div>
@@ -113,7 +113,15 @@ export default class MainPokes extends React.Component {
 								{ pokemon.types.map((name) => (<p key={ name.url } className={`tag-p-${name.type.name}`}>{ name.type.name }</p>)) }
 								{/* <p className="tag-p-fire">Fire</p> */}
 							</div>
-							<button className="button-pokemons-details">Ver detalhes</button>
+							<div className="div-button-details">
+							<button
+							value={pokemon.name}
+              className="button-pokemons-details"
+              >
+                Ver detalhes
+              </button>
+              </div>
+
 						</section>
 					))))}
 				</section>}
