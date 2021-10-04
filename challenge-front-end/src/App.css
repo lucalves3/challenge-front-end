@@ -551,7 +551,7 @@ color: #000000;
 
 .section-cards-api-pokemon {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
