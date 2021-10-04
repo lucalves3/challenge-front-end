@@ -1,7 +1,7 @@
 import React from 'react';
 import { getAllPokemons, getApiPokemon } from '../services/Api';
 import FavMainPokes from './FavMainPokes';
-import { Rating } from 'semantic-ui-react'
+import { Rating } from 'semantic-ui-react';
 
 export default class MainPokes extends React.Component {
 	constructor() {
@@ -45,6 +45,8 @@ export default class MainPokes extends React.Component {
 			});
 		}
 	}
+	
+
 
 	filterApiPoke() {
 		const { pokeApi } = this.state;
@@ -67,7 +69,6 @@ export default class MainPokes extends React.Component {
 			<Rating icon='heart' defaultRating={0} size="massive" />
 		)
 		const { pokeApi } = this.state;
-    
 		return (
 			<main className="section-mainPokes">
 				<section>
@@ -113,8 +114,14 @@ export default class MainPokes extends React.Component {
 								{/* <p className="tag-p-fire">Fire</p> */}
 							</div>
 							<div className="div-button-details">
-							<button className="button-pokemons-details">Ver detalhes</button>
+							<button
+							value={pokemon.name}
+              className="button-pokemons-details"
+              >
+                Ver detalhes
+              </button>
               </div>
+
 						</section>
 					))))}
 				</section>}
