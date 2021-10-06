@@ -35,7 +35,7 @@ export default class Header extends React.Component {
             </h1>
           </div>
         </section>
-        <Link to="/">
+        <Link to="/challenge-front-end">
           <button
           className="button-leave-header"
           >
