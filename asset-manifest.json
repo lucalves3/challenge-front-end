@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/challenge-front-end/static/css/main.64dc90a6.chunk.css",
-    "main.js": "/challenge-front-end/static/js/main.461641e9.chunk.js",
-    "main.js.map": "/challenge-front-end/static/js/main.461641e9.chunk.js.map",
+    "main.css": "/challenge-front-end/static/css/main.186047cc.chunk.css",
+    "main.js": "/challenge-front-end/static/js/main.4a6fe067.chunk.js",
+    "main.js.map": "/challenge-front-end/static/js/main.4a6fe067.chunk.js.map",
     "runtime-main.js": "/challenge-front-end/static/js/runtime-main.1aa40f6a.js",
     "runtime-main.js.map": "/challenge-front-end/static/js/runtime-main.1aa40f6a.js.map",
     "static/css/2.e0401339.chunk.css": "/challenge-front-end/static/css/2.e0401339.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.0971b060.chunk.js.map": "/challenge-front-end/static/js/3.0971b060.chunk.js.map",
     "index.html": "/challenge-front-end/index.html",
     "static/css/2.e0401339.chunk.css.map": "/challenge-front-end/static/css/2.e0401339.chunk.css.map",
-    "static/css/main.64dc90a6.chunk.css.map": "/challenge-front-end/static/css/main.64dc90a6.chunk.css.map",
+    "static/css/main.186047cc.chunk.css.map": "/challenge-front-end/static/css/main.186047cc.chunk.css.map",
     "static/js/2.bc38bb95.chunk.js.LICENSE.txt": "/challenge-front-end/static/js/2.bc38bb95.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/challenge-front-end/static/media/outline-icons.ddae9b1b.woff",
     "static/media/light-pokemons.eaeea135.png": "/challenge-front-end/static/media/light-pokemons.eaeea135.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.1aa40f6a.js",
     "static/css/2.e0401339.chunk.css",
     "static/js/2.bc38bb95.chunk.js",
-    "static/css/main.64dc90a6.chunk.css",
-    "static/js/main.461641e9.chunk.js"
+    "static/css/main.186047cc.chunk.css",
+    "static/js/main.4a6fe067.chunk.js"
   ]
 }
